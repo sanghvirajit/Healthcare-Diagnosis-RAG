@@ -47,9 +47,18 @@ python rag_response.py
 
 [Link Text] https://www.frontiersin.org/journals/neurology/articles/10.3389/fneur.2024.1472956/full
 
+store under ``` knowledge_base ``` dir.
+
 ## Gait Analysis Data
 
 ![image](https://github.com/user-attachments/assets/9ca07b96-f969-4af3-a251-8614084825dc)
+
+Gait analysis involves capturing and analysing movement data to evaluate walking mechanics and identify abnormalities in gait patterns. One of the most advanced solutions for rapid gait assessment is Orthelligent VISION developed by OPED GmbH, which provides a comprehensive analysis within just five minutes. Orthelligent leverages computer vision techniques and deep learning-based pose estimation models to interpret and assess human motion.
+
+Building on this foundation, we will take gait analysis a step further by integrating LLMs (Large Language Models) and RAG (Retrieval-Augmented Generation). 
+This approach will enable us to generate diagnoses based on a patient's gait analysis results, supplemented by insights from research papers and a structured medical knowledge base.
+
+Gait analysis input data is store under ``` data ``` dir.
 
 ```sh
 {
