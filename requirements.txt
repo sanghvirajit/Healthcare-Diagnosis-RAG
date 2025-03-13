@@ -1,0 +1,9 @@
+uvicorn
+fastapi
+groq
+langchain
+langchain_community
+unstructured
+unstructured[pdf]
+sentence-transformers
+chromadb

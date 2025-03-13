@@ -1,0 +1,148 @@
+{
+    "result_details": [
+        {
+            "name": "Gait Symmetry",
+            "description": "The gait symmetry indicates how symmetrical the left and right step length is. The higher the value, the better.",
+            "score_dict": {
+                "nominal_value": 80,
+                "nominal_lower": 90,
+                "nominal_upper": 100,
+                "unit": "%",
+                "unit_key": "percentage"
+            }
+        },
+        {
+            "name": "Gait Speed",
+            "description": "The gait speed indicates how fast the patient was walking during the analysis.",
+            "score_dict": {
+                "nominal_value": 1.5,
+                "nominal_lower": 2,
+                "nominal_upper": 5,
+                "unit": "km/h",
+                "unit_key": "km_per_h"
+            }
+
+        },
+        {
+            "name": "Cadence",
+            "description": "The gait cadence indicates the total number of steps taken within a minute during the analysis.",
+            "score_dict": {
+                "nominal_value": 80,
+                "nominal_lower": 90,
+                "nominal_upper": 115,
+                "unit": "Steps/min",
+                "unit_key": "steps_in_minutes"
+            }
+        },
+        {
+            "name": "Double Support Left",
+            "description": "The gait double support left indicates proportion of time that both feet of the patient are on the ground during the gait cycle of left leg.",
+            "score_dict": {
+                "nominal_value": 30,
+                "nominal_lower": 10,
+                "nominal_upper": 40,
+                "unit": "%",
+                "unit_key": "percentage"
+            }
+        },
+        {
+            "name": "Double Support Right",
+            "description": "The gait double support right indicates proportion of time that both feet of the patient are on the ground during the gait cycle of right leg.",
+            "score_dict": {
+                "nominal_value": 35,
+                "nominal_lower": 10,
+                "nominal_upper": 40,
+                "unit": "%",
+                "unit_key": "percentage"
+            }
+        },
+        {
+            "name": "Gait Variability Left",
+            "description": "The gait variability indicates step-to-step length fluctuation of left / right leg during the analysis.",
+            "score_dict": {
+                "nominal_value": 7,
+                "nominal_lower": 0,
+                "nominal_upper": 5,
+                "unit": "%",
+                "unit_key": "percentage"
+            }
+        },
+        {
+            "name": "Gait Variability Right",
+            "description": "The gait variability indicates step-to-step length fluctuation of left / right leg during the analysis.",
+            "score_dict": {
+                "nominal_value": 8,
+                "nominal_lower": 0,
+                "nominal_upper": 5,
+                "unit": "%",
+                "unit_key": "percentage"
+            }
+        },
+        {
+            "name": "Step Length Left",
+            "description": "The left gait step length indicates the average distance between the point of initial contact of the left foot to the point of initial contact of the right foot during the analysis.",
+            "score_dict": {
+                "nominal_value": 50,
+                "nominal_lower": 55,
+                "nominal_upper": 80,
+                "unit": "cm",
+                "unit_key": "centimeter"
+            }
+        },
+        {
+            "name": "Step Length Right",
+            "description": "The right gait step length indicates the average distance between the point of initial contact of the right foot to the point of initial contact of the left foot during the analysis.",
+            "score_dict": {
+                "nominal_value": 48,
+                "nominal_lower": 55,
+                "nominal_upper": 80,
+                "unit": "cm",
+                "unit_key": "centimeter"
+            }
+        },
+        {
+            "name": "Step Time Left",
+            "description": "The gait step time indicates the average time elapsed from initial contact of the left foot to initial contact of the right foot during the analysis.",
+            "score_dict": {
+                "nominal_value": 0.59,
+                "nominal_lower": 0.51,
+                "nominal_upper": 0.65,
+                "unit": "s",
+                "unit_key": "seconds"
+            }
+        },
+        {
+            "name": "Step Time Right",
+            "description": "The gait step time indicates the average time elapsed from initial contact of the right foot to initial contact of the left foot during the analysis.",
+            "score_dict": {
+                "nominal_value": 0.61,
+                "nominal_lower": 0.51,
+                "nominal_upper": 0.65,
+                "unit": "s",
+                "unit_key": "seconds"
+            }
+        },
+        {
+            "name": "Stance Time Left",
+            "description": "The gait stance time indicates the average percentage of time during which the left foot is in contact with the ground during the analysis.",
+            "score_dict": {
+                "nominal_value": 80,
+                "nominal_lower": 55,
+                "nominal_upper": 65,
+                "unit": "%",
+                "unit_key": "percentage"
+            }
+        },
+        {
+            "name": "Stance Time Right",
+            "description": "The gait stance time indicates the average percentage of time during which the right foot is in contact with the ground during the analysis.",
+            "score_dict": {
+                "nominal_value": 75,
+                "nominal_lower": 55,
+                "nominal_upper": 65,
+                "unit": "%",
+                "unit_key": "percentage"
+            }
+        }
+    ]
+}
