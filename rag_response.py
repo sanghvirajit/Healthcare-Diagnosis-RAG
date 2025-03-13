@@ -1,9 +1,11 @@
 import requests
 import json
 
+# Local API
 url = "http://127.0.0.1:8000/diagnose_parkinson/"
 
-file_path = "data/parkinson_patient_data.json" # parkinson_patient_data.json # healthy_patient_data.json
+# Load the gait analysis JSON data
+file_path = "data/parkinson_patient_data.json"
 with open(file_path, "r") as f:
     gait_data = json.load(f)
 
