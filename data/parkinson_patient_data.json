@@ -7,8 +7,7 @@
                 "nominal_value": 80,
                 "nominal_lower": 90,
                 "nominal_upper": 100,
-                "unit": "%",
-                "unit_key": "percentage"
+                "unit": "%"
             }
         },
         {
@@ -18,8 +17,7 @@
                 "nominal_value": 1.5,
                 "nominal_lower": 2,
                 "nominal_upper": 5,
-                "unit": "km/h",
-                "unit_key": "km_per_h"
+                "unit": "km/h"
             }
 
         },
@@ -30,8 +28,7 @@
                 "nominal_value": 80,
                 "nominal_lower": 90,
                 "nominal_upper": 115,
-                "unit": "Steps/min",
-                "unit_key": "steps_in_minutes"
+                "unit": "Steps/min"
             }
         },
         {
@@ -41,8 +38,7 @@
                 "nominal_value": 30,
                 "nominal_lower": 10,
                 "nominal_upper": 40,
-                "unit": "%",
-                "unit_key": "percentage"
+                "unit": "%"
             }
         },
         {
@@ -52,8 +48,7 @@
                 "nominal_value": 35,
                 "nominal_lower": 10,
                 "nominal_upper": 40,
-                "unit": "%",
-                "unit_key": "percentage"
+                "unit": "%"
             }
         },
         {
@@ -63,8 +58,7 @@
                 "nominal_value": 7,
                 "nominal_lower": 0,
                 "nominal_upper": 5,
-                "unit": "%",
-                "unit_key": "percentage"
+                "unit": "%"
             }
         },
         {
@@ -74,8 +68,7 @@
                 "nominal_value": 8,
                 "nominal_lower": 0,
                 "nominal_upper": 5,
-                "unit": "%",
-                "unit_key": "percentage"
+                "unit": "%"
             }
         },
         {
@@ -85,8 +78,7 @@
                 "nominal_value": 50,
                 "nominal_lower": 55,
                 "nominal_upper": 80,
-                "unit": "cm",
-                "unit_key": "centimeter"
+                "unit": "cm"
             }
         },
         {
@@ -96,8 +88,7 @@
                 "nominal_value": 48,
                 "nominal_lower": 55,
                 "nominal_upper": 80,
-                "unit": "cm",
-                "unit_key": "centimeter"
+                "unit": "cm"
             }
         },
         {
@@ -107,8 +98,7 @@
                 "nominal_value": 0.59,
                 "nominal_lower": 0.51,
                 "nominal_upper": 0.65,
-                "unit": "s",
-                "unit_key": "seconds"
+                "unit": "s"
             }
         },
         {
@@ -118,8 +108,7 @@
                 "nominal_value": 0.61,
                 "nominal_lower": 0.51,
                 "nominal_upper": 0.65,
-                "unit": "s",
-                "unit_key": "seconds"
+                "unit": "s"
             }
         },
         {
@@ -129,8 +118,7 @@
                 "nominal_value": 80,
                 "nominal_lower": 55,
                 "nominal_upper": 65,
-                "unit": "%",
-                "unit_key": "percentage"
+                "unit": "%"
             }
         },
         {
@@ -140,8 +128,7 @@
                 "nominal_value": 75,
                 "nominal_lower": 55,
                 "nominal_upper": 65,
-                "unit": "%",
-                "unit_key": "percentage"
+                "unit": "%"
             }
         }
     ]
