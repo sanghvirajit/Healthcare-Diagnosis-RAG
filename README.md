@@ -36,3 +36,78 @@ uvicorn rag:app --host 0.0.0.0 --port 8000
 python rag_response.py
 ```
 
+## Knowledge Base PDF
+
+[Link Text] https://www.frontiersin.org/journals/neurology/articles/10.3389/fneur.2024.1472956/full
+
+## Query
+
+Following query would be generated automatically from the input gait analysis results in JSON format saved under ```data``` dir.
+
+```
+Patient gait analysis results: Gait Symmetry for the patient is 80 % and 
+the reference range for healthy patient is between 90 % and 100 %, 
+Gait Speed for the patient is 1.5 km/h and the reference range for healthy 
+patient is between 2 km/h and 5 km/h, Cadence for the patient is 80 Steps/min 
+and the reference range for healthy patient is between 90 Steps/min and 
+115 Steps/min, Double Support Left for the patient is 30 % and the 
+reference range for healthy patient is between 10 % and 40 %, 
+Double Support Right for the patient is 35 % and the reference range for 
+healthy patient is between 10 % and 40 %, 
+Gait Variability Left for the patient is 7 % 
+and the reference range for healthy patient is between 0 % and 5 %, 
+Gait Variability Right for the patient is 8 % and the reference range for 
+healthy patient is between 0 % and 5 %, 
+Step Length Left for the patient is 50 cm and the reference range for 
+healthy patient is between 55 cm and 80 cm, 
+Step Length Right for the patient is 48 cm and 
+the reference range for healthy patient is between 55 cm and 80 cm, 
+Step Time Left for the patient is 0.59 s and the reference range for 
+healthy patient is between 0.51 s and 0.65 s, 
+Step Time Right for the patient is 0.61 s and the 
+reference range for healthy patient is between 0.51 s and 0.65 s, 
+Stance Time Left for the patient is 80 % and the reference range for 
+healthy patient is between 55 % and 65 %, 
+Stance Time Right for the patient is 75 % and the reference range for 
+healthy patient is between 55 % and 65 %, 
+What does this indicate about Parkinson's disease?
+```
+
+## Diagnosis Result
+
+Following diagnosis would be generated based on the query and the knowledge base pdf saved under ``` knowledge_base ``` dir
+
+```
+The patient's gait analysis results indicate several abnormalities that are 
+relevant to Parkinson's disease. The patient's Gait Speed of 1.5 km/h is 
+significantly lower than the reference range for healthy patients, which 
+is between 2 km/h and 5 km/h. This suggests a slower gait speed, which is a 
+common feature in Parkinson's disease patients.  The patient's Cadence of 
+80 Steps/min is also lower than the reference range for healthy patients, 
+which is between 90 Steps/min and 115 Steps/min. This indicates a reduced 
+walking speed, which is consistent with Parkinson's disease.  The patient's 
+Double Support Left and Double Support Right are both higher than the 
+reference range for healthy patients, indicating a longer time spent with 
+both feet on the ground. This is a characteristic feature of Parkinson's 
+disease, where patients often experience difficulty with gait initiation 
+and termination.  The patient's Step Length Left and Step Length Right are 
+both shorter than the reference range for healthy patients, which is between 
+55 cm and 80 cm. This suggests a reduced stride length, which is a common 
+feature in Parkinson's disease patients.  The patient's Gait Variability Left 
+and Gait Variability Right are both higher than the reference range for 
+healthy patients, indicating increased variability in gait patterns. 
+This is consistent with Parkinson's disease, where patients often experience 
+difficulty with gait coordination and stability.  
+The patient's Stance Time Left and Stance Time Right are both higher than the 
+reference range for healthy patients, indicating a longer time spent in the 
+stance phase of gait. This is a characteristic feature of Parkinson's disease, 
+where patients often experience difficulty with gait initiation and 
+termination.  Considering these abnormalities, the likelihood of Parkinson's 
+disease is moderate. However, possible further assessment with the doctors is 
+recommended and diagnosis should be confirmed by a qualified medical 
+professional.
+```
+
+
+
+
