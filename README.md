@@ -266,6 +266,9 @@ recommended and diagnosis should be confirmed by a qualified medical
 professional.
 ```
 
+### If you would like to know more in detail, please visit my technical blog on the same topic. 
+
+[Link Text] https://sanghvirajit.medium.com/enhancing-healthcare-diagnostics-with-retrieval-augmented-generation-rag-leveraging-langchain-2befddfe5859
 
 
 
