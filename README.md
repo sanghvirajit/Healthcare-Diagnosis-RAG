@@ -1,10 +1,17 @@
 # Healthcare Diagnosis with RAG
 Enhancing Healthcare Diagnostics with Retrieval-Augmented Generation (RAG): Leveraging LangChain, ChromaDB, and Hugging Face
 
+![image](https://github.com/user-attachments/assets/a2a1d92b-aba5-443d-b672-cdba8fcc56c7)
+
+
 # Introduction
 The integration of AI in healthcare is revolutionising diagnostics, particularly with advancements in Retrieval-Augmented Generation (RAG). By combining retrieval-based knowledge with generative capabilities, RAG enhances traditional AI models, delivering more accurate and reliable results. In this blog, we explore how RAG can be applied to diagnosing Parkinson's disease using gait analysis. Leveraging LangChain, ChromaDB vector database for efficient data retrieval and LLaMA-3 via the Groq API for intelligent generation, we demonstrate a cutting-edge approach to AI-driven medical diagnostics.
 
 LangChain is a popular open-source framework designed for developing applications powered by Large Language Models (LLMs). It provides tools and abstractions to integrate LLMs with external data sources, memory, and reasoning capabilities, making it easier to build AI-driven applications such as chatbots, RAG (Retrieval-Augmented Generation) systems, and autonomous agents.
+
+
+![image](https://github.com/user-attachments/assets/32c8d505-9564-4229-a73b-384745dbdf1b)
+
 
 ## Clone the github repository
 ```sh
@@ -39,6 +46,148 @@ python rag_response.py
 ## Knowledge Base PDF
 
 [Link Text] https://www.frontiersin.org/journals/neurology/articles/10.3389/fneur.2024.1472956/full
+
+## Gait Analysis Data
+
+![image](https://github.com/user-attachments/assets/9ca07b96-f969-4af3-a251-8614084825dc)
+
+```sh
+{
+    "result_details": [
+        {
+            "name": "Gait Symmetry",
+            "description": "The gait symmetry indicates how symmetrical the left and right step length is. The higher the value, the better.",
+            "score_dict": {
+                "nominal_value": 80,
+                "nominal_lower": 90,
+                "nominal_upper": 100,
+                "unit": "%"
+            }
+        },
+        {
+            "name": "Gait Speed",
+            "description": "The gait speed indicates how fast the patient was walking during the analysis.",
+            "score_dict": {
+                "nominal_value": 1.5,
+                "nominal_lower": 2,
+                "nominal_upper": 5,
+                "unit": "km/h"
+            }
+
+        },
+        {
+            "name": "Cadence",
+            "description": "The gait cadence indicates the total number of steps taken within a minute during the analysis.",
+            "score_dict": {
+                "nominal_value": 80,
+                "nominal_lower": 90,
+                "nominal_upper": 115,
+                "unit": "Steps/min"
+            }
+        },
+        {
+            "name": "Double Support Left",
+            "description": "The gait double support left indicates proportion of time that both feet of the patient are on the ground during the gait cycle of left leg.",
+            "score_dict": {
+                "nominal_value": 30,
+                "nominal_lower": 10,
+                "nominal_upper": 40,
+                "unit": "%"
+            }
+        },
+        {
+            "name": "Double Support Right",
+            "description": "The gait double support right indicates proportion of time that both feet of the patient are on the ground during the gait cycle of right leg.",
+            "score_dict": {
+                "nominal_value": 35,
+                "nominal_lower": 10,
+                "nominal_upper": 40,
+                "unit": "%"
+            }
+        },
+        {
+            "name": "Gait Variability Left",
+            "description": "The gait variability indicates step-to-step length fluctuation of left / right leg during the analysis.",
+            "score_dict": {
+                "nominal_value": 7,
+                "nominal_lower": 0,
+                "nominal_upper": 5,
+                "unit": "%"
+            }
+        },
+        {
+            "name": "Gait Variability Right",
+            "description": "The gait variability indicates step-to-step length fluctuation of left / right leg during the analysis.",
+            "score_dict": {
+                "nominal_value": 8,
+                "nominal_lower": 0,
+                "nominal_upper": 5,
+                "unit": "%"
+            }
+        },
+        {
+            "name": "Step Length Left",
+            "description": "The left gait step length indicates the average distance between the point of initial contact of the left foot to the point of initial contact of the right foot during the analysis.",
+            "score_dict": {
+                "nominal_value": 50,
+                "nominal_lower": 55,
+                "nominal_upper": 80,
+                "unit": "cm"
+            }
+        },
+        {
+            "name": "Step Length Right",
+            "description": "The right gait step length indicates the average distance between the point of initial contact of the right foot to the point of initial contact of the left foot during the analysis.",
+            "score_dict": {
+                "nominal_value": 48,
+                "nominal_lower": 55,
+                "nominal_upper": 80,
+                "unit": "cm"
+            }
+        },
+        {
+            "name": "Step Time Left",
+            "description": "The gait step time indicates the average time elapsed from initial contact of the left foot to initial contact of the right foot during the analysis.",
+            "score_dict": {
+                "nominal_value": 0.59,
+                "nominal_lower": 0.51,
+                "nominal_upper": 0.65,
+                "unit": "s"
+            }
+        },
+        {
+            "name": "Step Time Right",
+            "description": "The gait step time indicates the average time elapsed from initial contact of the right foot to initial contact of the left foot during the analysis.",
+            "score_dict": {
+                "nominal_value": 0.61,
+                "nominal_lower": 0.51,
+                "nominal_upper": 0.65,
+                "unit": "s"
+            }
+        },
+        {
+            "name": "Stance Time Left",
+            "description": "The gait stance time indicates the average percentage of time during which the left foot is in contact with the ground during the analysis.",
+            "score_dict": {
+                "nominal_value": 80,
+                "nominal_lower": 55,
+                "nominal_upper": 65,
+                "unit": "%"
+            }
+        },
+        {
+            "name": "Stance Time Right",
+            "description": "The gait stance time indicates the average percentage of time during which the right foot is in contact with the ground during the analysis.",
+            "score_dict": {
+                "nominal_value": 75,
+                "nominal_lower": 55,
+                "nominal_upper": 65,
+                "unit": "%"
+            }
+        }
+    ]
+}
+```
 
 ## Query
 
