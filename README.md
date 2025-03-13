@@ -1,4 +1,4 @@
-# Healthcare diagnosis with RAG
+# Healthcare Diagnosis with RAG
 Enhancing Healthcare Diagnostics with Retrieval-Augmented Generation (RAG): Leveraging LangChain, ChromaDB, and Hugging Face
 
 ## Clone the github repository
